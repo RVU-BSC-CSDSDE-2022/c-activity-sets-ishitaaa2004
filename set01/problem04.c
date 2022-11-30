@@ -1,14 +1,30 @@
-#include<stdio.h>
-void change(int *x,int *y);
-int main(void){
-  int x,y;
-  x=8,y=7;
-  change(&x,&y);
-  printf("x is %d y is %d",x,y);
-  return 0;
-}
-void change(int *x, int*y)
+# include <stdio.h>
+# include<stdlib.h>
+int addnum(int *a,int *b, int *sum)
 {
-  *x = 987654;
-  *y = 654354;
+  
+  *sum= *a+*b;
+
+}
+int main()
+{
+  int a,b,sum;
+  
+  printf("enter first num");
+  if(scanf("%d",&a)!=1)
+  {
+    printf("error");
+    exit(0);
+  }
+  printf("enter second num");
+  if(scanf("%d",&b)!=1)
+  {
+    printf("error");
+    exit(0);
+  }
+  addnum(&a,&b, &sum);
+  printf("sum is %d", sum);
+  return 0;
+  
+  
 }
