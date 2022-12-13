@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include <stdlib.h>
-int input_array_size()
+int input()
 {
   int a; 
   printf("enter the total number of values entered");
