@@ -9,10 +9,8 @@ int main(){
   b = input();
   c = input();
   compare(a,b,c,&l);
-  output(a,b,c,l);
-  
+  output(a,b,c,l); 
 }
-
 int input(){
   int x;
   printf("enter a number\n");
