@@ -1,6 +1,6 @@
-# include <stdio.h>
-# include<stdlib.h>
-int addnum(int *a,int *b, int *sum)
+#include <stdio.h>
+#include <stdlib.h>
+int input();
 {
   
   *sum= *a+*b;
