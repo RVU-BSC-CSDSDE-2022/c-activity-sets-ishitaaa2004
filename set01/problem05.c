@@ -12,7 +12,6 @@ int main(){
   output(a,b,sum);
   return 0;
 }
-
 int input(){
   int s;
   printf("enter the number\n");
